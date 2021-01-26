@@ -54,6 +54,7 @@ class Game {
   
   
   class Chip {
+
     constructor(game) {
       this.game = game
       this.points = Math.floor(Math.random() * game.pointsLimit)
@@ -64,6 +65,10 @@ class Game {
       
       this.game.board.appendChild(this.chip)
     }
+
+
+
+    
     _createChip(widthLimit, heightLimit) {
       const chip = document.createElement('div')
       chip.className = 'chip'
